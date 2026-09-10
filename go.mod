@@ -1,6 +1,6 @@
 module github.com/tomMoulard/fail2ban
 
-go 1.25.5
+go 1.25.14
 
 require (
 	github.com/stretchr/testify v1.12.1
