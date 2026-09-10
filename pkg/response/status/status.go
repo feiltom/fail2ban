@@ -43,7 +43,7 @@ func (s *status) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 
 	if !catcher.isFilteredCode() {
 		for k, vv := range catcher.Header() {
-			w.Header().Set(k, strings.Join(vv, ", "))
+			w.Header()[k] = vv
 		}
 
 		w.WriteHeader(catcher.getCode())
@@ -70,7 +70,7 @@ func (s *status) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	}
 
 	for k, vv := range catcher.Header() {
-		w.Header().Set(k, strings.Join(vv, ", "))
+		w.Header()[k] = vv
 	}
 
 	w.WriteHeader(catcher.getCode())
