@@ -6,9 +6,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/tomMoulard/fail2ban/pkg/data"
-	"github.com/tomMoulard/fail2ban/pkg/fail2ban"
-	"github.com/tomMoulard/fail2ban/pkg/logger"
+	"github.com/feiltom/fail2ban/pkg/data"
+	"github.com/feiltom/fail2ban/pkg/fail2ban"
+	"github.com/feiltom/fail2ban/pkg/logger"
 )
 
 type status struct {

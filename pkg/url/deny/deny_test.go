@@ -6,14 +6,14 @@ import (
 	"regexp"
 	"testing"
 
+	"github.com/feiltom/fail2ban/pkg/chain"
+	"github.com/feiltom/fail2ban/pkg/data"
+	"github.com/feiltom/fail2ban/pkg/fail2ban"
+	"github.com/feiltom/fail2ban/pkg/ipchecking"
+	"github.com/feiltom/fail2ban/pkg/rules"
+	"github.com/feiltom/fail2ban/pkg/utils/time"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"github.com/tomMoulard/fail2ban/pkg/chain"
-	"github.com/tomMoulard/fail2ban/pkg/data"
-	"github.com/tomMoulard/fail2ban/pkg/fail2ban"
-	"github.com/tomMoulard/fail2ban/pkg/ipchecking"
-	"github.com/tomMoulard/fail2ban/pkg/rules"
-	"github.com/tomMoulard/fail2ban/pkg/utils/time"
 )
 
 func TestDeny(t *testing.T) {

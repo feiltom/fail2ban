@@ -6,12 +6,12 @@ import (
 	"net/http"
 	"regexp"
 
-	"github.com/tomMoulard/fail2ban/pkg/chain"
-	"github.com/tomMoulard/fail2ban/pkg/data"
-	"github.com/tomMoulard/fail2ban/pkg/fail2ban"
-	"github.com/tomMoulard/fail2ban/pkg/ipchecking"
-	"github.com/tomMoulard/fail2ban/pkg/logger"
-	"github.com/tomMoulard/fail2ban/pkg/utils/time"
+	"github.com/feiltom/fail2ban/pkg/chain"
+	"github.com/feiltom/fail2ban/pkg/data"
+	"github.com/feiltom/fail2ban/pkg/fail2ban"
+	"github.com/feiltom/fail2ban/pkg/ipchecking"
+	"github.com/feiltom/fail2ban/pkg/logger"
+	"github.com/feiltom/fail2ban/pkg/utils/time"
 )
 
 type deny struct {
